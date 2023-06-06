@@ -1,0 +1,296 @@
+@font-face {
+   font-family: "SF Pro Bold";
+   src: url("/assets/fonts/sf-pro-display-cufonfonts-1/SFPRODISPLAYBOLD.OTF");
+   font-style: normal;
+
+   font-display: swap;
+ }
+
+ @font-face {
+   font-family: "SF Pro Med";
+   src: url("/assets/fonts/sf-pro-display-cufonfonts-1/SFPRODISPLAYMEDIUM.OTF");
+   font-style: normal;
+   font-display: swap;
+ }
+ @font-face {
+   font-family: "SF Pro Reg";
+   src: url("/assets/fonts/sf-pro-display-cufonfonts-1/SFPRODISPLAYREGULAR.OTF");
+   font-style: normal;
+   font-display: swap;
+ }
+.top{
+   background: #5583AD;
+   box-shadow: black 2px 2px 12px;
+   
+}
+.container-heading{
+   margin:0px 20px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between ;
+   padding: 1.2vw;
+   height: fit-content;
+   /* vertical-align: middle; */
+}
+.title{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   color: white;
+
+}
+h2.title{
+   text-align: center;
+   font-family: "SF Pro Bold";
+   color: white;
+   font-size: 2.2vw;
+}
+
+h4.title{
+   text-align: center;
+   font-family: "SF Pro Med";
+   color: #EEEEE3;
+   font-size: 2vw;
+
+}
+#left{
+   width: 5.5vw;
+   height: auto;
+   /* top: 50%;; */
+   /* left: 0px; */
+   /* margin: auto; */
+}
+
+#right{
+   width: 5.5vw;
+   height: auto;
+   /* position: absolute; */
+   /* top: 30px;
+   right: 20px; */
+}
+
+.gigw{
+   background-color: #494949;
+   display: flex;
+   flex-direction: row;
+   justify-content: end;
+   /* margin: 2px; */
+}
+.gigw a{
+   margin-right: 30px;
+   margin:2px 16px;
+   background-color: white;
+   border-radius: 10px;
+   /* color: black; */
+   padding: 2px 10px;
+
+}
+
+
+.navBar{
+   background: #EEEEE3;
+   height: 48px;
+   padding: 0px 64px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+
+   gap: 30px;
+}
+.navLink{
+   width: inherit;
+   margin: 0px 10px;
+   text-align: center;
+   font-size: 16px;
+   letter-spacing: 0.02em;
+   text-decoration: none;
+   color: #000;
+}
+
+.container1{
+   width: 96vw;
+   height: 360px;
+   /* background: #08447B; */
+   margin: 24px 1.6vw;
+   border-radius: 8px;
+   background: linear-gradient(0deg, rgba(8, 68, 123, 0.30), rgba(8, 68, 123, 0.83)), url(/assets/img/scott-blake-x-ghf9LjrVg-unsplash\ 1.png);
+}
+.container-inner{
+
+   /* width: 1156px; */
+   margin: 0px 8.1vw 0px 8.1vw;
+
+   display: flex;
+   flex-direction: row;
+   justify-content: center; 
+   align-items: center;
+
+}
+.col1{
+   /* position: relative; */
+   width: 16.3vw;
+   height: 250px;
+   margin: 55px 3px 55px 8.1vw;
+   border-radius: 8px;
+   /* margin-right: 8.1vw; */
+   /* margin-top: 55px; */
+}
+.tenders{
+   width: inherit;
+   height: inherit;
+   border-radius: 8px;
+   background: rgba(30, 94, 152, 0.7);
+   filter: drop-shadow(1px 1px 6px rgba(0, 0, 0, 0.25));
+   color: #fff;
+   padding: 115px 0px;
+   text-align: center;
+}
+.col2{
+   width: 23vw;
+}
+
+.Bulletin_archives{
+   height: 122px;
+   background: rgba(85, 131, 173, 0.8);
+   filter: drop-shadow(1px 1px 6px rgba(0, 0, 0, 0.25));
+   margin: 55px 0px 0px 3px;
+   border-radius: 8px;
+   color: #fff;
+   text-align: center;
+   padding: 50.7px 0px;
+}
+.Job_Opportunities{
+   /* width: inherit; */
+   height: 122px;
+   background: rgba(24, 77, 125, 0.8);
+   filter: drop-shadow(1px 1px 6px rgba(0, 0, 0, 0.25));
+   margin: 3px 0px 55px 3px;
+   border-radius: 8px;
+   color: #fff;
+   text-align: center;
+   padding: 50.7px 0px;
+}
+.OYH_Scheme{
+   /* width: inherit; */
+   height: 122px;
+   border-radius: 8px;
+   background: rgba(30, 94, 152, 0.7);
+   filter: drop-shadow(1px 1px 6px rgba(0, 0, 0, 0.25));
+   color: #fff;
+   margin: 55px 3px 0px 3px;
+   text-align: center;
+   padding: 50.7px 0px;
+}
+
+.Sale_Deeds{
+   /* width: inherit; */
+   height: 122px;
+   border-radius: 8px;
+   background: rgba(85, 131, 173, 0.8);
+   filter: drop-shadow(1px 1px 6px rgba(0, 0, 0, 0.25));
+   color: #fff;
+   margin: 3px 3px 55px 3px;
+   text-align: center;
+   padding: 50.7px 0px;
+}
+
+.col3{
+   /* position: relative; */
+   width: 16.3vw;
+   height: 250px;
+   margin: 55px 8.1vw 55px 3px;
+   border-radius: 8px;
+   /* margin-right: 8.1vw; */
+   /* margin-top: 55px; */
+}
+.Keelakottaiyur{
+   width: inherit;
+   height: inherit;
+   border-radius: 8px;
+   background: rgba(24, 77, 125, 0.8);
+   filter: drop-shadow(1px 1px 6px rgba(0, 0, 0, 0.25));
+   color: #fff;
+   padding: 115px 0px;
+   text-align: center;
+
+}
+
+/* text styles */
+.heading{
+   font-family: "SF Pro Bold";
+   font-size: 1.6vw;
+}
+.body-para{
+   font-family: "SF Pro Reg";
+   font-size: 1.3vw;
+   line-height: 140%;
+}
+.misc-text{
+   font-family: "SF Pro Reg";
+   font-size: 1.2vw;
+   line-height: 140%;
+   color: #767676;
+
+}
+
+
+.container2{
+   width: 96vw;
+   display: flex;
+   flex-direction: row;
+   margin: 24px 1.5vw;
+   gap: 1.3vw;
+
+}
+.about{
+   width: 55vw;
+   height:auto;
+
+   /* background: #5583AD; */
+}
+.notice{
+   background:#EEEEE3;
+   width: 39.4vw;
+height:fit-content;
+   border-radius: 8px;
+   display: flex;
+   flex-direction: column;
+   /* justify-content:center; */
+   align-items: center;
+   padding: 28px 28px;
+   
+}
+.heading#notice{
+   text-align: center;
+   /* margin: 28px 197.5px 10px 197.5px; */
+   margin-bottom: 0.7vw;
+   
+
+}
+.line#notice{
+   border: 1px solid #767676;
+   width: 25vw;
+   height: 0px;
+   margin-bottom: 2.5vw;
+   
+
+}
+.item{
+   width: 34vw;
+   margin: 0px 36px 12px 36px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: start;
+   
+}
+img#notice{
+   width: 1.7vw;
+   height: auto;
+}
+.misc-text#notice{
+ margin-left: 1.9vw;
+
+}
