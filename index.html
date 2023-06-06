@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
    <title>TNPHC</title>
@@ -11,9 +12,19 @@
 <body>
    
       <div class="top">
+         
          <div class="gigw">
-            <a>screen reader access</a><a>language</a><a>font-size</a>
+            <!-- <form class="d-flex">
+               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+               <button class="btn btn-outline-success" type="submit">Search</button>
+             </form> -->
+
+            <a id="gigw"><img src=""></a>
+            <a id="gigw">Screen reader access</a> 
+            <a id="gigw">language</a>
+            <a id="gigw">font-size</a>
          </div>
+         
          
       <div class="container-heading">
         <div class="logo1">
@@ -28,9 +39,23 @@
          </div>
       </div>
    </div>
+<!-- hamburger nav bar -->
+   
+      <ul class="navBar">
+         <li><a class="navLink" href="#">About Us</a></li>
+         <li><a class="navLink" href="#">Projects</a></li>
+         <li><a class="navLink" href="#">Our Organisation</a></li>
+         <li><a class="navLink" href="#">Achievements</a></li>
+         <li><a class="navLink" href="#">Tenders</a></li>
+         <li><a class="navLink" href="#">Events</a></li>
+       </ul>
+      <button class="hamburger">
+         <i class="menuIcon material-icons">menu</i>
+         <i class="closeIcon material-icons">close</i>
+       </button>
 
-   <div class="navBar">
-      <a class="navLink" href="index.html">
+      
+      <!-- <a class="navLink" href="index.html">
          About Us
       </a>
       <a class="navLink">
@@ -47,10 +72,10 @@
       </a>
       <a class="navLink" href="contact.html">
          Events
-      </a>
-   </div>
+      </a> -->
+  
 
-   <div class="container1">
+   <div class="container1" id="blue-box">
       <div class="container-inner">
          <div class="col1">
             <div class="tenders">Tenders</div>
@@ -80,22 +105,74 @@
          <div class="heading" id="notice">NOTICE BOARD</div>
          <div class="line" id="notice"></div>
          <div class="item">
-            <div><img src="/assets/img/announcement.png" id="notice"></div>
+            <div><img src="/assets/img/announcement.png" id="icon"></div>
             <div class="misc-text" id="notice">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam faucibus, felis ut aliquet dictum, leo ante scelerisque ante,i</div>
          </div>
          <div class="item">
-            <div><img src="/assets/img/announcement.png" id="notice"></div>
+            <div><img src="/assets/img/announcement.png" id="icon"></div>
             <div class="misc-text" id="notice">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam faucibus, felis ut aliquet dictum, leo ante scelerisque ante,i</div>
          </div>
          <div class="item">
-            <div><img src="/assets/img/announcement.png" id="notice"></div>
+            <div><img src="/assets/img/announcement.png" id="icon"></div>
             <div class="misc-text" id="notice">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam faucibus, felis ut aliquet dictum, leo ante scelerisque ante,i</div>
          </div>
 
       </div>
    </div>
+   <div class="container3">
+     <div>
+      <img src="/assets/img/tnphcbuilding.png" id="building">
+     </div>
+     <div class="body-para">However with the change in Government in 1991 this decision was reviewed. To effectively implement schemes for providing adequate housing facilites for the Police Personnel the revival of Tamil Nadu Police Housing Corporation was ordered in G.O.Ms.No. 1752 Home Department dt.21-11-1991. The Corporation has been functioning since then with greater zeal.
+      The authorized share Capital of the Company is Rs. 100.00 Lakhs and has been fully subscribed by the Government.
+     </div>
+   </div>
 
+   <div class="container4">
+      <div class="heading" id="#">Our Commitment</div>
+      <div class="commitment-boxes">
+         <div class="commitment-box">
+            <img src="/assets/img/Target.png" id="commitment">
+            <div class="content" id="commitment">
+               <div class="heading" id="commitment">
+                  Vision 
+               </div>
+               <div class="body-para" id="commitment">
+                  “....to achieve cost-effective construction projects of exceptional quality, within an accelerated timeframe, while minimising manpower requirements.
+               </div>
+            </div>
+         </div>
+         <div class="commitment-box">
+            <img src="/assets/img/Rocket.png" id="commitment">
+            <div class="content" id="commitment">
+               <div class="heading" id="commitment">
+                  Mission 
+               </div>
+               <div class="body-para" id="commitment">
+                  “....to fulfil the government's vision of ensuring that the fundamental requirement of shelter for police personnel in Tamil Nadu is met.
+               </div>
+            </div>
+         </div>
+         <div class="commitment-box">
+            <img src="/assets/img/clipboard.png" id="commitment">
+            <div class="content" id="commitment">
+               <div class="row">
+                  <div class="heading" id="commitment">
+                     Quality Policies </div>
+                  <img src="/assets/img/Vector.png" id="icon-arrow">
+               </div>
+               <div class="body-para" id="commitment">
+                  At TNPHC we commit ourselves to delivering high quality services....
+               </div>
+            </div>
+         </div>
+
+      </div>
+
+   </div>
       
 </body>
+
 <script src="/bootstrap/bootstrap.min.js"></script>
+<script src="/js/script.js"></script>
 </html>
