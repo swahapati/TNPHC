@@ -1,0 +1,412 @@
+
+@media screen and (max-width: 890px) {
+   #left {
+     width: 10vw;
+     height: auto;
+     /* top: 50%;; */
+     /* left: 0px; */
+     /* margin: auto; */
+   }
+   h2.title {
+     font-size: 2.8vw;
+   }
+ 
+   h4.title {
+     font-size: 2.4vw;
+   }
+   .navBar {
+     display: none;
+   }
+ 
+   img#gigw {
+     width: 2vw;
+     height: auto;
+   }
+   a#gigw {
+     color: #fff;
+     text-decoration: none;
+     font-size: 1.5vw;
+   }
+ 
+   .p-menu1 {
+     display: block;
+     height: 100%;
+   }
+ 
+   /* Hamburger */
+   .hamburger1 {
+     background: #eeeee3;
+     height: auto;
+     padding: 0px 10px;
+     display: -ms-grid;
+     display: flex;
+     flex-direction: column;
+     justify-items: end;
+     z-index: 120;
+   }
+ 
+   .hamburger1 div {
+     position: relative;
+     width: 4vw;
+     height: 0.4vw;
+     margin-top: 0.6vw;
+     /* -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; */
+   }
+ 
+   #toggle1 {
+     display: none;
+   }
+ 
+   #toggle1:checked + .hamburger1 .top {
+     -webkit-transform: rotate(-45deg);
+     transform: rotate(-45deg);
+     margin-top: 22.5px;
+   }
+ 
+   #toggle1:checked + .hamburger1 .meat {
+     -webkit-transform: rotate(45deg);
+     transform: rotate(45deg);
+     margin-top: -5px;
+   }
+ 
+   #toggle1:checked + .hamburger1 .bottom {
+     -webkit-transform: scale(0);
+     transform: scale(0);
+   }
+ 
+   #toggle1:checked ~ .menu1 {
+     height: fit-content;
+     padding: 20px;
+   }
+   
+   /* Menu */
+   .menu1 {
+     width: 100%;
+     background-color: #eeeee3;
+     display: flex;
+     flex-direction: column;
+     list-style: none;
+     height: 0px;
+     overflow: scroll;
+     transition: height 0.4s ease;
+     z-index: 120;
+     -webkit-transition: all 0.3s ease;
+     transition: all 0.3s ease;
+   }
+   img#hamburger {
+     width: 4vw;
+     height: auto;
+   }
+ 
+   .link1 {
+     font-family: "SF Pro Med";
+     width: fit-content;
+     margin: 0;
+     color: #000;
+     text-decoration: none;
+     /* padding: 16px; */
+   }
+ 
+   .link1:hover {
+     color: red;
+   }
+    .graph1{
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 2vw;
+   }
+   img.graph1{
+     width: 80vw;
+     height: auto;
+   }
+ }
+ 
+ @media screen and (max-width: 500px) {
+  .h3{
+    font-family: "SF Pro Bold" !important;
+    font-size: 4vw !important;
+    color: #000;
+  }
+   .container1 {
+     width: 96vw;
+     height: fit-content;
+     /* background: #08447B; */
+     margin: 2.4vw 1.6vw;
+     border-radius: 8px;
+     background: linear-gradient(
+         0deg,
+         rgba(8, 68, 123, 0.3),
+         rgba(8, 68, 123, 0.83)
+       ),
+       url(/assets/img/scott-blake-x-ghf9LjrVg-unsplash\ 1.png);
+   }
+   .container-inner {
+     padding: 7vw 12px;
+ 
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 8px;
+     justify-content: center;
+   }
+   #gigw {
+     font-size: 4vw;
+     height: auto;
+   }
+   .heading {
+     font-size: 3.6vw;
+   }
+   .body-para {
+     font-size: 3.2vw;
+   }
+   .misc-text {
+     font-size: 2.4vw;
+   }
+   .col1 {
+     /* width: 23vw; */
+     height: 13vw;
+     width: 80vw;
+     margin: 0px;
+     font-size: 4.6vw;
+     color: yellow;
+     padding: 0px;
+   }
+ 
+   .col2 {
+     width: 80vw;
+     gap: 8px;
+   }
+   .Bulletin_archives:nth-child(1) {
+     margin-bottom: 8px;
+   }
+ 
+   .Bulletin_archives {
+     height: 13vw;
+   }
+ 
+   .container2 {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 20px;
+   }
+   .about {
+     width: 96vw;
+     height: auto;
+   }
+   .notice {
+     width: 96vw;
+     height: auto;
+   }
+ 
+   #block1,
+   #block2,
+   #block3,
+   #block4,
+   #block5,
+   #block6 {
+     background: #5583ad;
+   }
+   .item {
+     width: 80vw;
+     margin: 0px 36px 12px 36px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: start;
+   }
+ 
+   img#building {
+     width: 100%;
+     height: auto;
+     filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.1));
+     border-radius: 9.24px;
+   }
+   img#icon {
+     width: 18px;
+     height: auto;
+   }
+   .misc-text#notice {
+     margin-left: 2.4vw;
+   }
+ 
+   .container3 {
+     flex-direction: column-reverse;
+     justify-content: center;
+     align-items: center;
+   }
+   img#commitment {
+     display: none;
+   }
+ 
+   img#icon-arrow {
+     width: 12vw;
+     aspect-ratio: 1;
+   }
+ 
+   .commitment-boxes {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 8px;
+     margin: 6px;
+   }
+   .commitment-box {
+     position: relative;
+     width: 96vw;
+     height: 40vw;
+     background: linear-gradient(180deg, #5583ad 0%, #34526f 100%);
+     border-radius: 8px;
+     padding: 0.9vw;
+   }
+   .commitment-box3{
+     width: 96vw;
+     min-height: 40vw;
+ 
+   }
+   .content#commitment {
+     position: absolute;
+     bottom: 21px;
+     /* margin: 0px 0.9vw 0px 0.9vw; */
+     margin-left: 1vw;
+     display: flex;
+     width: 80vw;
+     flex-direction: column;
+     justify-content: start;
+     align-items: start;
+   }
+ 
+   .heading#commitment {
+     color: #fff;
+     width: fit-content;
+   }
+   .body-para#commitment {
+     color: rgba(255, 255, 255, 0.8);
+     z-index: 50;
+   }
+   img#img_commitment {
+     position: absolute;
+     right: 0px;
+     top: 0px;
+     border-radius: 8px;
+     /* z-index: 10; */
+   }
+ 
+   .row#commitment {
+     width: inherit;
+     height: 40px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     /* margin: 0px; */
+   }
+ 
+   #img_commitment:nth-child(1) {
+     width: 30vw;
+     height: auto;
+   }
+   #img_commitment:nth-child(2) {
+     width: 30vw;
+     height: auto;
+   }
+   #img_commitment:nth-child(3) {
+     width: 30vw;
+     height: auto;
+   }
+ 
+   img#icon-arrow {
+     width: 10vw;
+     height: auto;
+    
+   } 
+ 
+   .top {
+     background: #5583ad;
+     box-shadow: black 2px 2px 12px;
+     display: flex;
+     flex-direction: column;
+     gap: 0px;
+   }
+   .container-heading {
+     margin: 30px 0px 0px 0px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+     padding: 1.4vw 1.2vw 1.2vw 1.2vw;
+     height: fit-content;
+   }
+   .title {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     color: white;
+   }
+   h2.title {
+     text-align: center;
+     font-family: "SF Pro Bold";
+     color: white;
+     font-size: 4vw;
+   }
+ 
+   h4.title {
+     text-align: center;
+     font-family: "SF Pro Med";
+     color: #eeeee3;
+     font-size: 3vw;
+   }
+   #left {
+     width: 10vw;
+     height: auto;
+   }
+   .gigw {
+     position: fixed;
+     width: 100%;
+     height: fit-content;
+     padding: 0.5vw 1vw;
+     background-color: #494949;
+     display: flex;
+     flex-direction: row;
+     justify-content: end;
+     align-items: center;
+     z-index: 100;
+     transition: top 0.5s;
+   }
+   a#gigw {
+     color: #eeeee3;
+     padding: 0.1vw 0vw;
+     font-size: 2vw;
+     margin: 0px 1vw;
+   }
+   img#gigw {
+     margin: 0px 5px;
+     width: 3.5vw;
+     height: auto;
+   }
+   .contact1.heading{
+     font-size: 3vw;
+   }
+   .contact1{
+ 
+     width: auto;
+   }
+   iframe{
+     width: 90vw;
+     
+   }
+   .contact1.row1{
+     flex-direction: column-reverse;
+     width: fit-content;
+     align-items: center;
+   }
+   .row1#contact1{
+     justify-content: start;
+     gap: 10vw;
+   }
+ 
+ }
+ 

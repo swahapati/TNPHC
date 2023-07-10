@@ -1,0 +1,51 @@
+.table-div{
+   height: 75vh;
+   width: inherit;
+   border: #646464 1px solid;
+   border-radius: 20px;
+   overflow: scroll;
+}
+.edit{
+   text-align: end;
+   right: 8px;
+
+}
+
+table{
+
+   color: #646464;
+   font-size: 14px;
+   font-family: SF Pro Display;
+   font-weight: 400;
+}
+
+th{
+   background-color: #F3F7FF !important;
+}
+/* th{
+   width: 100%;
+} */
+/* tr{
+   border:  #E0E0E0 1px solid;
+   border-radius: 10px;
+} */
+td, th{
+   min-width: 100px;
+}
+td,.bordered{
+   border: #E0E0E0 1px solid;
+   text-align: center;
+}
+
+
+
+
+.projects-table{
+   background: palegoldenrod;
+   overflow:auto;
+   width: inherit;
+   height: 40vh;
+ }
+ #myDIV{
+   display: none;
+ }

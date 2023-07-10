@@ -4,9 +4,15 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/1f1de8da90.js" crossorigin="anonymous"></script>
+   <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/mediaquery.css">
    <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
+   <link rel="stylesheet" href="css/table.css">
+   <script src="/assests/js/apexcharts.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    
    <title>TNPHC</title>
 </head>
 <body>
@@ -14,165 +20,1028 @@
       <div class="top">
          
          <div class="gigw">
-            <!-- <form class="d-flex">
-               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-               <button class="btn btn-outline-success" type="submit">Search</button>
-             </form> -->
-
-            <a id="gigw"><img src=""></a>
-            <a id="gigw">Screen reader access</a> 
-            <a id="gigw">language</a>
-            <a id="gigw">font-size</a>
+            <!-- <div class="search-container">
+               <form action="/action_page.php">
+                 <input type="text" placeholder="Search.." name="search">
+                 <button type="submit"><img src="/assets/img/search.png"></button>
+               </form>
+             </div> -->
+            <a href="#footer" id="gigw"><img src="/assets/img/phone-call-incoming.png" id="gigw">Contact</a>
+            <a id="gigw" data-bs-toggle="modal" type="button" data-bs-target="#sitemap-modal"><img src="/assets/img/map.png" id="gigw">Sitemap</a>
+            <a id="gigw"><img src="/assets/img/eye-off (1).png" id="gigw">Screen reader access</a> 
+            <a id="gigw"><img src="/assets/img/Frame 50.png" id="gigw">language</a>
+            <a id="gigw"><img src="/assets/img/map.png" id="gigw">font-size</a>
+         </div>
+         <!-- sitemap modal -->
+         <div class="modal fade" id="sitemap-modal" tabindex="-1" aria-labelledby="sitemap-modal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="sitemap-modal">Sitemap</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <div class="container">
+                  Sitemap under construction
+               </div>
+               </div>
+            </div>
+            </div>
          </div>
          
          
-      <div class="container-heading">
-        <div class="logo1">
-            <img class="logo1" id="left" src="/assets/img/TN_logo.png">
+      <div class="container-heading mt-3">
+        <div class="logo">
+            <img class="logo1" id="left" src="/assets/img/logo (3).png">
         </div> 
          <div class="title">
             <h2 class="title">Tamil Nadu Police Housing Corporation</h2>
             <h4 class="title">Government of Tamil Nadu</h4>
          </div>
-         <div class="logo2">
-            <img class="logo2" id="right" src="/assets/img/TN_logo.png">
+         <div class="logo">
+            <img class="logo2" id="left" src="/assets/img/TN_logo.png">
          </div>
       </div>
    </div>
-<!-- hamburger nav bar -->
+<!-- 
+       <div class="row"> -->
+         <div class="menubar">
+           <nav class="navbar navbar-expand-lg showMenu">
+             <div class="container-fluid ">
+               <button class="navbar-toggler custom-toggler hamburger" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                 <img src="/assets/img/hamburger menu.png" class="ham-menu w-50"id="icon" alt="">
+                 <!-- <img src="/assets/img/Cross.png" class="cross"id="icon" alt=""> -->
+               </button>
+               <div class="nav mx-6 collapse navbar-collapse " id="navbarNavDropdown">
+                 <!-- <div class="nav " > -->
+                  <div>
+                     <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-aos="zoom-in" data-aos-delay="100" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About us </a>
+                     </li>
+                  </div>
+                  <div>
+                     <li class="nav-item">
+                        <a class="nav-link" id="organisation-tab" data-aos="zoom-in" data-aos-delay="500" data-bs-toggle="tab" href="#two" role="tab" aria-controls="organisation" aria-selected="false" tabindex="-1">Organisation </a>
+                     </li>
+                  </div>
+                  <div>
+                     <li class="nav-item">
+                        <a class="nav-link" id="projects-tab" data-aos="zoom-in" data-aos-delay="700" data-bs-toggle="tab" href="#three" role="tab" aria-controls="projects" aria-selected="false" tabindex="-1">Projects</a>
+                     </li>
+                  </div>
+                  <li class="nav-item">
+                     <a class="nav-link" id="achievements-tab" data-aos="zoom-in" data-aos-delay="900" data-bs-toggle="tab" href="#five" role="tab" aria-controls="five" aria-selected="false" tabindex="-1">Achievements </a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" id="tenders-tab" data-aos="zoom-in" data-aos-delay="1100" data-bs-toggle="tab" href="#six" role="tab" aria-controls="six" aria-selected="false" tabindex="-1">Tenders </a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" id="events-tab" data-aos="zoom-in" data-aos-delay="1300" data-bs-toggle="tab" href="#seven" role="tab" aria-controls="seven" aria-selected="false" tabindex="-1">Events </a>
+                  </li>
+               <!-- </div> -->
+                 
+               </div>
+             </div>
+           </nav>
+           </div>
+         <!-- </div> -->
+
+
+   <div class="my-3">
+      <div class="tab-content">
+         <!-- about us -->
+         <div class="tab-pane active fade show" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div id="blue-box">
+               <div class="container-inner">
+                  <div class="col1" id="block1">
+                     <div class="Tenders body-para" >Tenders</div>
+                  </div>
+                  <div class="col2">
+                     <div class="Bulletin_archives body-para" id="block2">Bulletin archives</div>
+                     <div class="Bulletin_archives body-para" id="block3">Job Opportunities</div>
+                  </div>
+                  <div class="col2">
+                     <div class="Bulletin_archives body-para" id="block4">OYH Scheme</div>
+                     <div class="Bulletin_archives body-para" id="block5">Sale Deeds</div>
+                  </div>
+                  <div class="col1"  id="block6">
+                     <div class= "Tenders body-para">Keelakottaiyur</div>
+                  </div>
+               </div>
+            </div>
+            <div class="container2">
+               <div class="about">
+                  <div class="h3">About TNPHC </div>
+                  <p>Government of Tamilnadu with a view to raising the level of satisfaction in housing for police personnel decided to construct houses for the Policemen and Police Officers and issued orders in G.O.Ms.No. 2500 Home Department dt. 27-9-1980 for the constitution of a Company under Companies Act 1956. Accordingly this Company was registered under the Companies Act 1956, as a wholly owned Company of Tamil Nadu Government and came into being with effect from 13-4-1981. While the Company was gradually increasing its construction activities each year, the then Government based on the recommendations of Ramanathan Committee constituted to study the viability and usefulness of Public Sector Enterprises and other autonomous bodies, in G.O.Ms.No. 527 Home dt. 31-3-1989 ordered winding up of this Corporation with effect from 31-3-1989. The activities of this Corporation were then transferred to the Tamil Nadu Housing Board.
+                  </p>
+         
+               </div>
+               <div class="notice">
+                  <div class="h3" id="notice">NOTICE BOARD</div>
+                  <div class="line mb-4" id="notice"></div>
+                  <div class="item my-1">
+                     <div><img src="/assets/img/announcement.png" id="icon"></div>
+                     <p id="notice">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                  </div>
+                  <div class="item my-1">
+                     <div><img src="/assets/img/announcement.png" id="icon"></div>
+                    <p id="notice">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                  <div class="item my-1">
+                     <div><img src="/assets/img/announcement.png" id="icon"></div>
+                    <p id="notice">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+         
+               </div>
+            </div>
+            <div class="container2">
+              <div>
+               <img src="/assets/img/tnphcbuilding.png" id="building">
+              </div>
+              <p>However with the change in Government in 1991 this decision was reviewed. To effectively implement schemes for providing adequate housing facilites for the Police Personnel the revival of Tamil Nadu Police Housing Corporation was ordered in G.O.Ms.No. 1752 Home Department dt.21-11-1991. The Corporation has been functioning since then with greater zeal.
+               The authorized share Capital of the Company is Rs. 100.00 Lakhs and has been fully subscribed by the Government.
+              </p>
+            </div>
+         
+            <div class="container4">
+               <div class="h3" id="#">Our Commitment</div>
+               <div class=" commitment-boxes my-1 row row-cols-1 row-cols-sm-1 row-cols-md-3 g-2 justify-content-md-around">
+                  <div class="col-lg-3 commitment-box">
+                     <img src="/assets/img/Target.png" id="img_commitment">
+                     <div class="content" id="commitment">
+                        <div class="h3" id="commitment">
+                           Vision
+                        </div>
+                        <p id="commitment">
+                           “....to achieve cost-effective construction projects of exceptional quality, within an accelerated timeframe, while minimising manpower requirements.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 commitment-box">
+                     <div class="" id="commitment">
+                        <div class="h3" id="commitment">
+                           Mission
+                        </div>
+                        <p id="commitment">
+                           “....to fulfil the government's vision of ensuring that the fundamental requirement of shelter for police personnel in Tamil Nadu is met.
+                        </p>
+                     </div>
+                     <img src="/assets/img/Rocket.png" id="img_commitment">
+                  </div>
+                  <!-- 3rd commitment box -->
+                  <div class="col-lg-3 commitment-box3 position-relative" onclick="toggleDesc()">
+                     <img src="/assets/img/clipboard.png" id="img_commitment">
+                     <div class="">
+                        <div class="d-flex flex-row justify-content-between toggler toggled"  id="commitment">
+                           <div class="h3" id="commitment">
+                              Quality Policies
+                           </div>
+                           <img src="/assets/img/arrow(1).png"  id="icon-arrow">
+                        </div>
+                        <div class="desc">
+                           <div class=" short" id="commitment-short">
+                              At TNPHC we commit ourselves to delivering high quality services....
+                           </div>
+                           <div class="long" id="commitment-long">
+                              At TNPHC we commit ourselves to delivering high quality services<br>
+                              <ul>
+                                 <li>Deliver quality construction to the user at minimum cost and time overrun</li>
+                                 <li>Enhance the level of housing satisfaction of the user</li>
+                                 <li>Continually improve the Quality Management System</li>
+                                 <li> Adhere to safe work practices and applicable statutory and regulatory requirements</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+         
+               </div>
+         
+            </div>
+         </div>
+         <!-- organisation -->
+         <div class="tab-pane fade show " id="two" role="tabpanel" aria-labelledby="organisation-tab">
+            <div class="my-5 h-75 mx-5 ">
+               <div class="h3 text-center" data-aos="flip-right" data-aos-duration="600" data-aos-delay="800">Our Organisation</div><br>
+               <div class="my-1 row row-cols-1 row-cols-sm-1 row-cols-md-3 g-2 justify-content-between">
+                  <button class="col-md-auto custom-button org-btn btn px-5" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                     Board of Directors
+                   </button>
+                   <button type="button" class="col-md-auto custom-button org-btn btn px-5" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                     Management
+                   </button>
+                   <button type="button" class="col-md-auto custom-button org-btn btn px-5" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                     Previous CMDs
+                   </button>
+                  </div>
+               <!-- Modals -->
+                  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <h1 class="modal-title fs-5" id="exampleModalLabel">Management</h1>
+                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        
+         
+                        <div class="modal-body">
+                           <div class="container">
+                           <h1 class="modal-title fs-5 my-3" id="exampleModalLabel">Registered Office</h1>
+                           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-2 justify-content-md-around">
+                              <div class="custom-card card mx-3 x-3" style="width: 18rem;">
+                                 <img src="/assets/img/image 2.png" class="card-img-top" alt="...">
+                                 <div class="card-body">
+                                 <h6 class="card-title">Chairman & Managing Director</h6>
+                                 <h5 class="card-title">Dr. A. K. Viswanathan, I.P.S.</h5>
+                                 <p class="card-text">Director General of Police,
+                                    Chennai – 600 010.</p>
+                                 </div>
+                              </div>
+                              <div class="custom-card card mx-3 x-3" style="width: 18rem;">
+                                 <img src="/assets/img/image 2.png" class="card-img-top" alt="...">
+                                 <div class="card-body">
+                                 <h6 class="card-title">Chairman & Managing Director</h6>
+                                 <h5 class="card-title">Dr. A. K. Viswanathan, I.P.S.</h5>
+                                 <p class="card-text">Director General of Police,
+                                    Chennai – 600 010.</p>
+                                 </div>
+                              </div>
+                              <div class="custom-card card mx-3 x-3" style="width: 18rem;">
+                                 <img src="/assets/img/image 2.png" class="card-img-top" alt="...">
+                                 <div class="card-body">
+                                 <h6 class="card-title">Chairman & Managing Director</h6>
+                                 <h5 class="card-title">Dr. A. K. Viswanathan, I.P.S.</h5>
+                                 <p class="card-text">Director General of Police,
+                                    Chennai – 600 010.</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <h1 class="modal-title fs-5 my-3" id="exampleModalLabel">Circle Office</h1>
+                           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-2 justify-content-md-around">
+                     <div class="custom-card card mx-3 x-3" style="width: 18rem;">
+                        <img src="/assets/img/image 2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Chairman & Managing Director</h6>
+                          <h5 class="card-title">Dr. A. K. Viswanathan, I.P.S.</h5>
+                          <p class="card-text">Director General of Police,
+                           Chennai – 600 010.</p>
+                        </div>
+                      </div>
+                      <div class="custom-card card mx-3 x-3" style="width: 18rem;">
+                        <img src="/assets/img/image 2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Chairman & Managing Director</h6>
+                          <h5 class="card-title">Dr. A. K. Viswanathan, I.P.S.</h5>
+                          <p class="card-text">Director General of Police,
+                           Chennai – 600 010.</p>
+                        </div>
+                      </div>
+                      <div class="custom-card card mx-3 x-3" style="width: 18rem;">
+                        <img src="/assets/img/image 2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Chairman & Managing Director</h6>
+                          <h5 class="card-title">Dr. A. K. Viswanathan, I.P.S.</h5>
+                          <p class="card-text">Director General of Police,
+                           Chennai – 600 010.</p>
+                        </div>
+                      </div>
+                      <div class="custom-card card mx-3 x-3" style="width: 18rem;">
+                        <img src="/assets/img/image 2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Chairman & Managing Director</h6>
+                          <h5 class="card-title">Dr. A. K. Viswanathan, I.P.S.</h5>
+                          <p class="card-text">Director General of Police,
+                           Chennai – 600 010.</p>
+                        </div>
+                      </div>
+                           </div>
+                           </div>
+                        </div>
+                     </div>
+                     </div>
+                  </div>
+                  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <h1 class="modal-title fs-5" id="exampleModalLabel">Board of Directors</h1>
+                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                           <div class="container">
+                           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-2 justify-content-md-around">
+                     <div class="custom-card card mx-3 x-3" style="width: 18rem;">
+                        <img src="/assets/img/image 2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Chairman & Managing Director</h6>
+                          <h5 class="card-title">Dr. A. K. Viswanathan, I.P.S.</h5>
+                          <p class="card-text">Director General of Police,
+                           Chennai – 600 010.</p>
+                        </div>
+                      </div>
+                      <div class="custom-card card mx-3 x-3" style="width: 18rem;">
+                        <img src="/assets/img/image 2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Chairman & Managing Director</h6>
+                          <h5 class="card-title">Dr. A. K. Viswanathan, I.P.S.</h5>
+                          <p class="card-text">Director General of Police,
+                           Chennai – 600 010.</p>
+                        </div>
+                      </div>
+                      <div class="custom-card card mx-3 x-3" style="width: 18rem;">
+                        <img src="/assets/img/image 2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Chairman & Managing Director</h6>
+                          <h5 class="card-title">Dr. A. K. Viswanathan, I.P.S.</h5>
+                          <p class="card-text">Director General of Police,
+                           Chennai – 600 010.</p>
+                        </div>
+                      </div>
+                      <div class="custom-card card mx-3 x-3" style="width: 18rem;">
+                        <img src="/assets/img/image 2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Chairman & Managing Director</h6>
+                          <h5 class="card-title">Dr. A. K. Viswanathan, I.P.S.</h5>
+                          <p class="card-text">Director General of Police,
+                           Chennai – 600 010.</p>
+                        </div>
+                      </div>
+                  </div>
+                         
+                        </div>
+                        </div>
+                     </div>
+                     </div>
+                  </div>
+                  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <h1 class="modal-title fs-5" id="exampleModalLabel">Previous CMDs</h1>
+                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                           <div class="container">
+                           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-2 justify-content-md-around">
+                     <div class="custom-card card mx-3 x-3" style="width: 18rem;">
+                        <img src="/assets/img/image 2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Chairman & Managing Director</h6>
+                          <h5 class="card-title">Dr. A. K. Viswanathan, I.P.S.</h5>
+                          <p class="card-text">Director General of Police,
+                           Chennai – 600 010.</p>
+                        </div>
+                      </div>
+                      <div class="custom-card card mx-3 x-3" style="width: 18rem;">
+                        <img src="/assets/img/image 2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Chairman & Managing Director</h6>
+                          <h5 class="card-title">Dr. A. K. Viswanathan, I.P.S.</h5>
+                          <p class="card-text">Director General of Police,
+                           Chennai – 600 010.</p>
+                        </div>
+                      </div>
+                      <div class="custom-card card mx-3 x-3" style="width: 18rem;">
+                        <img src="/assets/img/image 2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Chairman & Managing Director</h6>
+                          <h5 class="card-title">Dr. A. K. Viswanathan, I.P.S.</h5>
+                          <p class="card-text">Director General of Police,
+                           Chennai – 600 010.</p>
+                        </div>
+                      </div>
+                      <div class="custom-card card mx-3 x-3" style="width: 18rem;">
+                        <img src="/assets/img/image 2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Chairman & Managing Director</h6>
+                          <h5 class="card-title">Dr. A. K. Viswanathan, I.P.S.</h5>
+                          <p class="card-text">Director General of Police,
+                           Chennai – 600 010.</p>
+                        </div>
+                      </div>
+                  </div>
+                         
+                        </div>
+                        </div>
+                     </div>
+                     </div>
+                  </div>
+ 
+               
+            </div>
+         </div>
+         <!-- projects -->
+         <div class="tab-pane fade show" id="three" role="tabpanel" aria-labelledby="projects-tab">
+            <div class="mt-5 h3 text-center" data-aos="flip-right" data-aos-duration="600" data-aos-delay="800">Our Projects</div><br>
+            
+            <div class="container mt-5 ">
+               <div class="row mb-5 ">
+                <div class="col-md-6  text-center"><h6>Houses Constructed 2020-21</h6>
+                <div class="graph border border-light" id="chart1"></div>
+                </div>
+                <div class="col-md-6 text-center"><h6>Work Expenditure 2020-21</h6>
+                <div class="graph border border-light" id="chart2"></div>
+                </div>
+               </div>
+               
+
+               <div class="container justify-content-end">
+                  
+                  
+                  
+                  <div class="table-div mb-5">
+                     <table class="table " id="projectsTable">
+                        <thead>
+                             <tr>
+                               <th colspan="15" class="text-center rounded-top-2" scope="col">
+                                 PHASE I TO PHASE XXI, CMA, MPF, PART II, OYH, FIRE & PRISON (Category wise Quarters details)
+                               </th>
+                             </tr>
+                             <tr>
+                              <th colspan="15" class="text-center" scope="col">
+                                 ANNEXURE - A
+                              </th>
+                            </tr>
+                            <tr class="bordered">
+                              <th class="myDIV"><bold>Select</bold></th>
+                              <th class="text-center" scope="col">
+                                 S. No
+                              </th>
+                              <th class="text-center" scope="col">
+                                 IG
+                               </th>
+                               <th class="text-center" scope="col">
+                                 DIG
+                               </th>
+                               <th class="text-center" scope="col">
+                                 DC
+                               </th>
+                               <th class="text-center" scope="col">
+                                 SP
+                               </th>
+                               <th class="text-center" scope="col">
+                                 SP
+                               </th>
+                               <th class="text-center" scope="col">
+                                 SP
+                               </th>
+                               <th class="text-center" scope="col">
+                                 SP
+                               </th>
+                               <th class="text-center" scope="col">
+                                 DC
+                               </th>
+                               <th class="text-center" scope="col">
+                                 SP
+                               </th>
+                               <th class="text-center" scope="col">
+                                 SP
+                               </th>
+                               <th class="text-center" scope="col">
+                                 SP
+                               </th>
+                               <th class="text-center" scope="col">
+                                 SP
+                               </th>
+                               <th class="text-center" scope="col">
+                                 SP
+                               </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="tableRow">
+                           <td  class="myDIV"><INPUT type="checkbox" name="chk"/></td>
+                            <td type="num">1</td>
+                            <td>Pharmacist</td>
+                            <td>France</td>
+                            <td>Fast and the Furious, The</td>
+                            <td>2</td>
+                            <td>Assistant Professor</td>
+                            <td>Russia</td>
+                            <td>Villa Rides!</td>
+                            <td>3</td>
+                            <td>Design Engineer</td>
+                            <td>China</td>
+                            <td>Oranges and Sunshine</td>
+                            <td>Jeff Cornier</td>
+                            <td>Assistant Media Planner</td>
+
+                          </tr>
+                        
+                        
+                        </tbody>
+                     </table>
+                  
+                  </div>
+
+
+               </div>
+
+         
+               </div>
+
+               <!-- Button trigger modal -->
+               <div class=" container row row-cols-md-6  gy-2 justify-content-sm-center m-auto">
+                  <div class="col-md-2 col-sm-3  mx-1 custom-button btn text-center" href="" data-bs-toggle="modal" data-bs-target="#exampleModal4"><a>Projects overview<br><i class="bi bi-check2-square"></i></a></div>
+                  <div class="col-md-2 col-sm-3 mx-1 custom-button btn text-center" href="" data-bs-toggle="modal" data-bs-target="#exampleModal5"><a>Buildings constructed<br><i class="bi bi-building-fill-check"></i></a></div>
+                  <div class="col-md-2 col-sm-3 mx-1 custom-button btn text-center" href="" data-bs-toggle="modal" data-bs-target="#exampleModal6"><a>Special Works & Projects<br><i class="bi bi-person-workspace"></i></a></div>
+                  <div class="col-md-2 col-sm-3 mx-1 custom-button btn text-center" href="" data-bs-toggle="modal" data-bs-target="#exampleModal7"><a>Annual Achievements<br><i class="bi bi-calendar3"></i></a></div>
+                  <div class="col-md-2 col-sm-3 mx-1 custom-button btn text-center" href="" data-bs-toggle="modal" data-bs-target="#exampleModal8"><a>Project Photos<br><i class="bi bi-images"></i></a></div>
+                  <div class="col-md-2 col-sm-3 mx-1 custom-button btn text-center" href="" data-bs-toggle="modal" data-bs-target="#exampleModal9"><a>Under Progress<br><i class="bi bi-bookmarks-fill"></i></a></div>
+                  </div>
+                  <div class="float-end mx-5"><a href="#" class="link-primary">Archives</a></div>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        ...
+                        </div>
+                        <div class="modal-footer">
+                        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button> -->
+                        </div>
+                     </div>
+                  </div>
+                  </div>
+                  
+                  <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        ...
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                     </div>
+                  </div>
+                  </div>
+                  
+                  
+                  <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        ...
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                     </div>
+                  </div>
+                  </div>
+                  
+                  <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        ...
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                     </div>
+                  </div>
+                  </div>
+                  
+                  <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        ...
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                     </div>
+                  </div>
+                  </div>
+                  
+                  <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        ...
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                     </div>
+                  </div>
+                  </div>
+          
+         </div>
+
+         <!-- Achievements -->
+         <div class="tab-pane fade show" id="five" role="tabpanel" aria-labelledby="achievements-tab">
+            <div class="my-5 h-75 mx-5 ">
+               <div class="h3 text-center" data-aos="flip-right" data-aos-duration="600" data-aos-delay="800">Our Achievements</div><br>
+               <div class="my-1  justify-content-center  ">
+                  
+                  <div class="col-md-8 mb-3 mx-auto row justify-content-center border border-light rounded bg-light">
+                     <div class="col-md-6 mb-md-0 p-md-4 ">
+                        <img src="/assets/img/Spendings.png" class="w-100" alt="...">
+                     </div>
+                     <div class="col-md-6 p-4 ps-md-0">
+                        <h5 class="mt-0">Columns with stretched link</h5>
+                        <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                     </div>
+                  </div>
+                   
+                  
+
+                  <div class="col-md-8  mb-3s mx-auto row justify-content-center border border-light  rounded bg-light">
+                     <div class="col-md-auto mb-md-0 p-md-4">
+                        <img src="./assets/img/certificate.png" class=" mh-50 mx-auto" alt="...">
+                     </div>
+                     <div class="col-md-6 p-4 ps-md-0">
+                        <h5 class="mt-0">Columns with stretched link</h5>
+                        <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                     </div>
+                  </div>
+                   
+                  
+
+
+
+
+                  </div>
+               
+               </div>
+               <!-- modal button and trigger -->
+               <div class="col-md-2 mx-1 custom-button btn text-center" href="" data-bs-toggle="modal" data-bs-target="#exampleModal10"><a>Financial</a></div>
+               <div class="float-end mx-5"><a href="#" class="link-primary">Archives</a></div>
+                  
+               <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                     <div class="modal-dialog">
+                        <div class="modal-content">
+                           <div class="modal-header">
+                           <h1 class="modal-title fs-5" id="exampleModalLabel">Financial Achievement</h1>
+                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                           </div>
+                           <div class="modal-body">
+                              <table class="table">
+                                 <thead>
+                                   <tr>
+                                     <th scope="col">Name</th>
+                                     <th scope="col">Designation</th>
+                                   </tr>
+                                 </thead>
+                                 <tbody>
+                                   <tr>
+                                     <th scope="row">name</th>
+                                     <td>designation</td>
+                                   </tr>
+                                   <tr>
+                                     <th scope="row">name</th>
+                                     <td>designation</td>
+                                   </tr>
+                                 </tbody>
+                               </table>
+                           </div>
+                           <div class="modal-footer">
+                              <div class=" mx-auto"><a href="#" class="link-primary">Archives</a></div>
+                           <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                           <button type="button" class="btn btn-primary">Save changes</button> -->
+                           </div>
+                        </div>
+                     </div>
+               </div>
+         </div>
+         <!-- Tenders -->
+         <div class="tab-pane fade show" id="six" role="tabpanel" aria-labelledby="tenders-tab">
+            <div class="my-5 mx-3 h3 text-center" data-aos="flip-right" data-aos-duration="600" data-aos-delay="800">Tenders</div>
+            <div class="my-3">
+                
+
+
+               <div class="container justify-content-end">
+                  <div class="options">
+                     
+                     <!-- radio -->
+                     <div class="d-flex flex-row justify-content-between">
+                        <div class="input-group  w-25">
+                           <input class="form-control border-end-0 border text-secondary" type="search" value="Search" id="example-search-input">
+                           
+                               <button class="btn btn-outline-secondary  border-start-0 border ms-n5" type="button">
+                                   <i class="fa fa-search"></i>
+                               </button>
+                               
+                           </span>
+                       </div>
    
-      <ul class="navBar">
-         <li><a class="navLink" href="#">About Us</a></li>
-         <li><a class="navLink" href="#">Projects</a></li>
-         <li><a class="navLink" href="#">Our Organisation</a></li>
-         <li><a class="navLink" href="#">Achievements</a></li>
-         <li><a class="navLink" href="#">Tenders</a></li>
-         <li><a class="navLink" href="#">Events</a></li>
-       </ul>
-      <button class="hamburger">
-         <i class="menuIcon material-icons">menu</i>
-         <i class="closeIcon material-icons">close</i>
-       </button>
+                        <!-- <img class="tenders vh-6" id="icon" src="/assets/img/Group 57.svg"> -->
+                     </div>
+                     
+                  </div>
+               
+                  
+                  <div class="table-div mb-5">
+                     <table class="table " id="myTable">
+                        <thead>
+                             <tr>
+                               <th colspan="15" class="text-center rounded-top-2" scope="col">
+                                 PHASE I TO PHASE XXI, CMA, MPF, PART II, OYH, FIRE & PRISON (Category wise Quarters details)
+                               </th>
+                             </tr>
+                             <tr>
+                              <th colspan="15" class="text-center" scope="col">
+                                 ANNEXURE - A
+                              </th>
+                            </tr>
+                            <tr class="bordered">
+                              <th class="myDIV"><bold>Select</bold></th>
+                              <th class="text-center" scope="col">
+                                 S. No
+                              </th>
+                              <th class="text-center" scope="col">
+                                 IG
+                               </th>
+                               <th class="text-center" scope="col">
+                                 DIG
+                               </th>
+                               <th class="text-center" scope="col">
+                                 DC
+                               </th>
+                               <th class="text-center" scope="col">
+                                 SP
+                               </th>
+                               <th class="text-center" scope="col">
+                                 SP
+                               </th>
+                               <th class="text-center" scope="col">
+                                 SP
+                               </th>
+                               <th class="text-center" scope="col">
+                                 SP
+                               </th>
+                               <th class="text-center" scope="col">
+                                 DC
+                               </th>
+                               <th class="text-center" scope="col">
+                                 SP
+                               </th>
+                               <th class="text-center" scope="col">
+                                 SP
+                               </th>
+                               <th class="text-center" scope="col">
+                                 SP
+                               </th>
+                               <th class="text-center" scope="col">
+                                 SP
+                               </th>
+                               <th class="text-center" scope="col">
+                                 SP
+                               </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="tableRow">
+                           <td  class="myDIV"><INPUT type="checkbox" name="chk"/></td>
+                            <td type="num">1</td>
+                            <td>Pharmacist</td>
+                            <td>France</td>
+                            <td>Fast and the Furious, The</td>
+                            <td>2</td>
+                            <td>Assistant Professor</td>
+                            <td>Russia</td>
+                            <td>Villa Rides!</td>
+                            <td>3</td>
+                            <td>Design Engineer</td>
+                            <td>China</td>
+                            <td>Oranges and Sunshine</td>
+                            <td>Jeff Cornier</td>
+                            <td>Assistant Media Planner</td>
 
+                          </tr>
+                        
+                        
+                        </tbody>
+                     </table>
+                  
+                  </div>
+
+               </div>
+                
+            </div>
+         </div>
+         <!-- Events -->
+         <div class="tab-pane fade show" id="seven" role="tabpanel" aria-labelledby="events-tab">
+         <div class="my-5 h-75 mx-5 ">
+            <div class="h3 text-center" data-aos="flip-right" data-aos-duration="600" data-aos-delay="800">Events</div><br>
+            <div class="my-1 row row-cols-1 row-cols-md-2 justify-content-md-around">
+   
+                <div class="col-md-5 mb-3 custom card justify-content-md-between pt-3" id="events-card">
+                  <img src="/assets/img/events-img1.png" id="" alt="...">
+                  <div class="card-img-overlay"></div>
+                  <div class="row card-body">
+                   <h5 class="col col-md-auto w-auto">Republic Day Celebrations -2023</h5>
+
+                   <a class="col stretched-link text-end" data-bs-toggle="modal" data-bs-target="#exampleModal11">See More</a>
+                 </div>
+              </div>
+                <div class="col-md-5 mb-3 custom card justify-content-md-between pt-3" id="events-card">
+                  <img src="/assets/img/events-img1.png" id="" alt="...">
+                  <div class="card-img-overlay"></div>
+                  <div class="row card-body">
+                   <h5 class="col col-md-auto">Republic Day Celebrations -2023</h5>
+                   <a href="#" class="col stretched-link text-end" data-bs-toggle="modal" data-bs-target="#exampleModal12">See More</a>
+                 </div>
+              </div>
+              <div class="col-md-5 mb-3 custom card justify-content-md-between pt-3" id="events-card">
+               <img src="/assets/img/events-img1.png" id="" alt="...">
+               <div class="card-img-overlay"></div>
+               <div class="row card-body">
+                <h5 class="col col-md-auto">Republic Day Celebrations -2023</h5>
+                <a href="#" class="col stretched-link text-end "data-bs-toggle="modal" data-bs-target="#exampleModal13">See More</a>
+              </div>
+           </div>
+
+                
+
+
+           <div class="modal fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Republic Day Celebrations -2023</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <div class="container">
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-2 justify-content-md-around">
+                     <div class="col-md-auto " id="">
+                      <img src="/assets/img/events-img1.png" id="" alt="...">
+                     </div>
+                     <div class="col-md-auto " id="">
+                      <img src="/assets/img/events-img1.png" id="" alt="...">
+                     </div>
+                     <div class="col-md-auto " id="">
+                      <img src="/assets/img/events-img1.png" id="" alt="...">
+                     </div>
+                     <div class="col-md-auto " id="">
+                      <img src="/assets/img/events-img1.png" id="" alt="...">
+                     </div>
+                  </div>
+                
+               </div>
+               </div>
+            </div>
+            </div>
+         </div>
+         <div class="modal fade" id="exampleModal12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Republic Day Celebrations -2023</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <div class="container">
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-2 justify-content-md-around">
+                     <div class="col-md-auto " id="">
+                      <img src="/assets/img/events-img1.png" id="" alt="...">
+                     </div>
+                     <div class="col-md-auto " id="">
+                      <img src="/assets/img/events-img1.png" id="" alt="...">
+                     </div>
+                     <div class="col-md-auto " id="">
+                      <img src="/assets/img/events-img1.png" id="" alt="...">
+                     </div>
+                     <div class="col-md-auto " id="">
+                      <img src="/assets/img/events-img1.png" id="" alt="...">
+                     </div>
+                  </div>
+                
+               </div>
+               </div>
+            </div>
+            </div>
+         </div>
+         <div class="modal fade" id="exampleModal13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Republic Day Celebrations -2023</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <div class="container">
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-2 justify-content-md-around">
+                     <div class="col-md-auto " id="">
+                      <img src="/assets/img/events-img1.png" id="" alt="...">
+                     </div>
+                     <div class="col-md-auto " id="">
+                      <img src="/assets/img/events-img1.png" id="" alt="...">
+                     </div>
+                     <div class="col-md-auto " id="">
+                      <img src="/assets/img/events-img1.png" id="" alt="...">
+                     </div>
+                     <div class="col-md-auto " id="">
+                      <img src="/assets/img/events-img1.png" id="" alt="...">
+                     </div>
+                  </div>
+                
+               </div>
+               </div>
+            </div>
+            </div>
+         </div>
       
-      <!-- <a class="navLink" href="index.html">
-         About Us
-      </a>
-      <a class="navLink">
-         Projects
-      </a>
-      <a class="navLink" href="contact.html">
-         Our Organisation
-      </a>
-      <a class="navLink" href="contact.html">
-         Achievements
-      </a>
-      <a class="navLink" href="contact.html">
-         Tenders
-      </a>
-      <a class="navLink" href="contact.html">
-         Events
-      </a> -->
-  
+               </div>
+               
+           
+               
 
-   <div class="container1" id="blue-box">
-      <div class="container-inner">
-         <div class="col1">
-            <div class="tenders">Tenders</div>
+            
          </div>
-         <div class="col2">
-            <div class="Bulletin_archives">Bulletin archives</div>
-            <div class="Job_Opportunities">Job Opportunities</div>
-         </div>
-         <div class="col2">
-            <div class="OYH_Scheme">OYH Scheme</div>
-            <div class="Sale_Deeds">Sale Deeds</div>
-         </div>
-         <div class="col3">
-            <div class="Keelakottaiyur">Keelakottaiyur</div>
          </div>
       </div>
    </div>
 
-   <div class="container2">
-      <div class="about">
-         <div class="heading">About TNPHC</div>
-         <div class="body-para">Government of Tamilnadu with a view to raising the level of satisfaction in housing for police personnel decided to construct houses for the Policemen and Police Officers and issued orders in G.O.Ms.No. 2500 Home Department dt. 27-9-1980 for the constitution of a Company under Companies Act 1956. Accordingly this Company was registered under the Companies Act 1956, as a wholly owned Company of Tamil Nadu Government and came into being with effect from 13-4-1981. While the Company was gradually increasing its construction activities each year, the then Government based on the recommendations of Ramanathan Committee constituted to study the viability and usefulness of Public Sector Enterprises and other autonomous bodies, in G.O.Ms.No. 527 Home dt. 31-3-1989 ordered winding up of this Corporation with effect from 31-3-1989. The activities of this Corporation were then transferred to the Tamil Nadu Housing Board.
-         </div>
 
+   
+   <!-- common footer -->
+   <div >
+      <div class="container5">
+         <div class="scroll-container position-relative">
+            <div class="scroll-text w-auto h3 align-middle">“Bribe Giving and Receiving is an offence”</div>
+          </div>
+          <div class="small-button custom-button ">
+            DVAC Notice
+          </div>
       </div>
-      <div class="notice">
-         <div class="heading" id="notice">NOTICE BOARD</div>
-         <div class="line" id="notice"></div>
-         <div class="item">
-            <div><img src="/assets/img/announcement.png" id="icon"></div>
-            <div class="misc-text" id="notice">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam faucibus, felis ut aliquet dictum, leo ante scelerisque ante,i</div>
-         </div>
-         <div class="item">
-            <div><img src="/assets/img/announcement.png" id="icon"></div>
-            <div class="misc-text" id="notice">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam faucibus, felis ut aliquet dictum, leo ante scelerisque ante,i</div>
-         </div>
-         <div class="item">
-            <div><img src="/assets/img/announcement.png" id="icon"></div>
-            <div class="misc-text" id="notice">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam faucibus, felis ut aliquet dictum, leo ante scelerisque ante,i</div>
-         </div>
-
-      </div>
-   </div>
-   <div class="container3">
-     <div>
-      <img src="/assets/img/tnphcbuilding.png" id="building">
-     </div>
-     <div class="body-para">However with the change in Government in 1991 this decision was reviewed. To effectively implement schemes for providing adequate housing facilites for the Police Personnel the revival of Tamil Nadu Police Housing Corporation was ordered in G.O.Ms.No. 1752 Home Department dt.21-11-1991. The Corporation has been functioning since then with greater zeal.
-      The authorized share Capital of the Company is Rs. 100.00 Lakhs and has been fully subscribed by the Government.
-     </div>
-   </div>
-
-   <div class="container4">
-      <div class="heading" id="#">Our Commitment</div>
-      <div class="commitment-boxes">
-         <div class="commitment-box">
-            <img src="/assets/img/Target.png" id="commitment">
-            <div class="content" id="commitment">
-               <div class="heading" id="commitment">
-                  Vision 
-               </div>
-               <div class="body-para" id="commitment">
-                  “....to achieve cost-effective construction projects of exceptional quality, within an accelerated timeframe, while minimising manpower requirements.
-               </div>
+    
+      <div class="container6">
+         <h3 id="footer"> Contact Us</h3>
+         
+         
+         <div class="row row-cols-md-2 gy-2" >
+                  <div class="">
+                     <div class="">
+                        <div class="h3">Registered Office</div>
+                        <p>Tamil Nadu Police Housing Corporation Ltd.,No. 132, E.V.R.Salai (Poonamallee High Road),
+                           Kilpauk,Chennai - 600010.
+                           Ph: 044-28364761, 28364762,
+                           28364763 ,28364764</p>
+                     </div>
+                     <div class="">
+                        <div class="h3 ">Divisional Office</div>
+                        <div class="d-flex flex-row justify-content-between align-items-start " >
+                                 <div id="">
+                                 <a class="link" href=""><p>Chennai Division - I<span class="caret"></span</p> ></a>
+                                 <a class="link" href=""><p>Chennai Division - II</p></a>
+                                 <a class="link" href=""><p>Madurai</p></a>
+                                 <a class="link" href=""><p>The Executive Engineer</p></a>
+                                 </div>
+                              <div class="" id="">
+                                 <a class="link" href=""><p>Trichy</p></a>
+                                 <a class="link" href=""><p>Coimbatore</p></a>
+                                 <a class="link" href=""><p>Salem</p></a>
+                                 <a class="link" href=""><p>Tirunelveli</p></a>
+                              </div>
+                           
+      
+      
+                        </div>
+                     </div>
+                  </div>
+                  <div class="map mx-auto">
+                     <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7772.80621710122!2d80.2506633393924!3d13.073619499004563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52671b8b5ce2af%3A0xa5c22c80805eabfe!2sTamil%20Nadu%20Police%20Housing%20Corporation!5e0!3m2!1sen!2sin!4v1686303625694!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
             </div>
+      
          </div>
-         <div class="commitment-box">
-            <img src="/assets/img/Rocket.png" id="commitment">
-            <div class="content" id="commitment">
-               <div class="heading" id="commitment">
-                  Mission 
-               </div>
-               <div class="body-para" id="commitment">
-                  “....to fulfil the government's vision of ensuring that the fundamental requirement of shelter for police personnel in Tamil Nadu is met.
-               </div>
-            </div>
-         </div>
-         <div class="commitment-box">
-            <img src="/assets/img/clipboard.png" id="commitment">
-            <div class="content" id="commitment">
-               <div class="row">
-                  <div class="heading" id="commitment">
-                     Quality Policies </div>
-                  <img src="/assets/img/Vector.png" id="icon-arrow">
-               </div>
-               <div class="body-para" id="commitment">
-                  At TNPHC we commit ourselves to delivering high quality services....
-               </div>
-            </div>
-         </div>
-
-      </div>
-
    </div>
       
 </body>
 
+<!-- <script src="/assests/js/all_charts.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script src="/bootstrap/bootstrap.min.js"></script>
 <script src="/js/script.js"></script>
+<script src="/js/chart.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+<script src="/js/table.js"></script>
 </html>
